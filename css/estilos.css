@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+   text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  background-color: rgb(253, 241, 227);
+  width: 1200px;
+}
+
+h2 {
+  color: rgb(121, 71, 118);
+  font-size: 4em;
+  font-weight: 900;
+}
+
+/*SECCION */
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: chartreuse;
+  padding: 6em 1em;
+  border: 1px solid black;
+}
+
+/*HEADER */
+
+/*BARRA NAVEGACIÒNi INICIO*/
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2em 5em;
+  position: fixed;
+  background-color: #4966e9;
+  justify-content: flex-end;
+  overflow: hidden;
+  box-shadow: 0.0625em 0.0625em 1.25em rgb(212, 208, 208);
+}
+
+/* --items-nav-- */
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+.item {
+  text-decoration: none;
+  color: white;
+  margin-right: 1em;
+  list-style: none;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton-contacto {
+  width: 20px;
+  background-color: #c9184a;
+  border-radius: 28px;
+  padding: 0.6em 2em;
+}
+
+a>.item {
+  transition: 0.2s;
+}
+
+a.selected:hover, a.item:hover {
+  color: #995cef;
+  transition: 0.2s;
+}
+
+/*BARRA NAVEGACIÒN FIN */
+
+/*SOBRE MI INICIO */
+
+.columna {
+  margin: 6em 3.5em;
+  width: 100%;
+  background-color: rgb(240, 161, 57);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.presentacion-banner {
+  width: 50%;
+  background-color: darkred;
+}
+
+.imagen-chicabanner {
+  width: 50%;
+}
+
+/*--TITULO HOLA SOY -banner-- */
+
+.titulo-hola {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0 0 0 0;
+}
+
+.mi-nombre {
+  font-size: 60px;
+  font-weight: 2000;
+  color: blueviolet;
+  margin: 0 0 0 0;
+}
+
+.mi-descripcion {
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(167, 165, 168);
+}
+
+/*SOBRE MI FIN */
+
+/*MIS CONOCIMIENTOS INICIO */
+
+/*MIS CONOCIMIENTOS */
+
+.columna-2 {
+  margin: 6em 3.5em;
+  width: 100%;
+  background-color: rgb(226, 21, 6);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+#caja-padre {
+  width: 100%;
+  background-color: rgb(41, 203, 209);
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin: 2.5em 5em;
+  padding: 3.5em;
+}
+
+.caja {
+  background-color: white;
+  margin: 0.5em;
+  padding: 3.5em 5em;
+  border: 1px solid #e9ecf7;
+  border-radius: 9px;
+}
+
+.caja:hover {
+  border: 1px solid purple;
+  color: purple;
+  
+}
+
+.icono-conoc {
+  font-size: 6em;
+  justify-content: center;
+}
+
+.titulo-conoc {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+
+.mi-descripcion-conoc{
+
+
+}
+
+
+/* Caja-conocimientos  */
