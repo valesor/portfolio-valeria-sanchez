@@ -177,71 +177,57 @@
 
 
     <!-- #######        INICIO SECCION CONTACTO        #######   -->
-    <section class="section-container-5" id="contacto">
+    <section id="contacto" class="seccion-contacto">
 
-        <div class="columna-5" id="contenedor-contacto">
-            <div id="contactame-texto">
-                <h2 class="titulo-escribime" class="titulo-h2">Contactame</h2>
-                <p class="texto-contactame">Si quieres saber más sobre mi trabajo y poder crear juntos. Te dejo mis redes.</p>
-                <div class="caja-redesform">
-                    <ul class="lista-contacto">
-                        <li class="item-contacto">
-                            <a href="#" class="a_contacto">
-                                <i class="fab fa-twitter icono-form">
-                                </i> Twitter</a>
-                        </li>
-                        <li class="item-contacto">
-                            <a href="#" class="a_contacto">
-                                <i class="fab fa-github-alt icono-form">
-                                </i> Github</a>
-                        </li>
-                        <li class="item-contacto">
-                            <a href="#" class="a_contacto">
-                                <i class="fab fa-linkedin-in icono-form"></i> Linkedin</a>
-                        </li>
-                        <li class="item-contacto">
-                            <a href="#" class="a_contacto">
-                                <i class="fas fa-envelope icono-form"></i> E-mail</a>
-                        </li>
+        <div class="box-contacto-principal">
+            
+            <div class="box-contacto-contactame">
+                <div class="box-contacto-texto">
+                    <h2>Contactame</h2>
+                    <p>Te dejo mis redes sociales. Para que me contactes y podamos trabajar juntos. Podras ir viendo las actualizaciones de mis proyectos.</p>
+                </div>
+                <div class="box-contacto-lista">
+                    <ul>
+                        <li><a class="box-contacto-links" href="https://www.instagram.com/vale755/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a class="box-contacto-links" href="https://github.com/valesor" target="_blank"><i class="fab fa-github-alt"></i>Github</a></li>
+                        <li><a class="box-contacto-links" href="https://www.linkedin.com/in/valeria-s%C3%A1nchez-77578915b/" target="_blank"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                        <li><a class="box-contacto-links" href="mailto:valeria.sanchez.ord@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a></li>
                     </ul>
                 </div>
             </div>
-            <!--Fin form-redes -->
 
-            <!--Inicio form- -->
-            <div class="contactame-escribime">
-                <h2 class="titulo-escribime" class="titulo-h2">Escribime</h2>
-                <form class="fomulario" action="suscribe.php" method="POST">
-                    <div class="contenedor-2form">
-                        <div class="contenedor-nombre-apellido">
-                            <div class="caja-nombre">
-                                <label class="label-name" for="name">Nombre*</label>
-                                <input class="nombre-input-1" type="text" name="nombre" placeholder="ej:Maria"
-                                    aria-label="Nombre" required>
-                            </div>
-                            <div class="caja-apellido">
-                                <label class="label-name" for="lastname">Apellido*</label>
-                                <input class="nombre-input-2" type="text" name="apellido" placeholder="ej.: Perez"
-                                    aria-label="apellido" required>
-                            </div>
-                        </div>
-                        <div class="caja-email">
-                            <label class="label-name" for="email">Email*</label>
-                            <input class="nombre-input-3" type="text" name="email" placeholder="ej.;aaaaa@gmail.com"
-                                aria-label="email" required>
-                        </div>
+            <div class="box-contacto-escribime">
+                <h2>Escribime</h2>
+                <div class="box-first-second-name">
+
+                    <div class="box-name">
+                        <label>Nombre *</label>
+                        <input name="first-name" type="text" required="required" placeholder="Nombre">
                     </div>
-                    <div class="caja-comentario">
-                        <label class="label-name" for="Mensaje*">Mensaje*</label>
-                        <textarea class="texto-input" name="mensaje" id="mensaje" cols="60" rows="13"
-                            placeholder="Escriba su consulta acá" aria-label="mensaje" required></textarea>
+
+                    <div class="box-second-name">
+                    <label>Apellido *</label>
+                    <input name="second-name" type="text" required="required" placeholder="Apellido">
                     </div>
-                    <button type="submit" class="boton-formulario">Enviar</button>
-                </form>
+
+                </div>
+
+                <div class="box-email">
+                <label>Email *</label>
+                <input name="email" type="email" required="required" placeholder="Email">
+                </div>
+
+                <div class="box-textarea">
+                <label>Mensaje *</label>
+                <textarea name="textarea" placeholder="Escriba un mensaje aquí"></textarea>
+                </div>
+
+                <input class="boton-enviar" type="submit" name="enviar" value="Enviar">
+                
             </div>
         </div>
-
     </section>
+
     <!-- #######        FIN SECCION CONTACTO        #######   -->
 
     <!-- #######         INICIO FOOTER     #######   -->
