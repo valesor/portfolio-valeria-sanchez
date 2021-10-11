@@ -11,112 +11,309 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Portfolio</title>
 </head>
 
 <body>
- <!--####HEADER INICIO### -->
+
+    <!--#######  INICIO HEADER   ###### -->
+
     <header>
-        <!--Menu navegaciòn inicio-->
         <nav>
             <ul>
-                <li>
-                    <a class="item" href="#">HOME</a>
+                <li class="i-activo item ">
+                    <a class="link_item" href="#">HOME</a>
                 </li>
 
-                <li>
-                    <a class="item" href="#conocimientos">CONOCIMIENTOS</a>
+                <li class="i-activo  item " >
+                    <a class="link_item "href="#conocimientos">CONOCIMIENTOS</a>
                 </li>
 
-                <li>
-                    <a class="item" href="#proyectos">PROYECTOS</a>
+                <li class="i-activo  item " >
+                    <a class="link_item"href="#proyectos">PROYECTOS</a>
                 </li>
 
-                <li>
-                    <a class="item boton-contacto" href="#contacto">CONTACTO</a>
+                <li class="item ">
+                    <a class="link_item boton-contacto" href="#contacto">CONTACTO</a>
                 </li>
             </ul>
         </nav>
-            <!--Menu navegaciòn fin-->
+     
     </header>
 
- <!--#### HEADER FIN### -->
+    <!--#######  FIN HEADER   ###### -->
 
-<!-- ##### Comienzo Sobre mí ##### -->
 
-<section class="section-container" >
-    <div class="columna ">
-        <div class="presentacion-banner">
-            <p class="titulo-hola">¡Hola! Soy</p>
-            <h1 class="mi-nombre">Valeria Sánchez</h1>
-            <p class="mi-descripcion">Desarrolladora, guitarrista y fan de las matemáticas</p>
-            <p> Lo que hago</p> 
+    <!-- #######    INICIO SECCION SOBRE MI   #######   -->
+
+    <section class="section-container-1" id="home">
+        <div class="columna">
+            <div class="presentacion-banner">
+                <p class="titulo-hola">¡Hola! Soy</p>
+                <h1 class="mi-nombre">Valeria Sánchez</h1>
+                <p class="mi-descripcion">Tecnica de soporte, estudiante de diseño web y fotografa amateur </p>
+                <a class="boton-lo-que-hago" href="#proyectos">LO QUE HAGO</a>
+            </div>
+            <img class="imagen-chicabanner" src="imagenes/chica-progra.svg" alt="">
         </div>
-            <img class="imagen-chicabanner" src="../imagenes/chica-progra1.jpg" alt="" >
-    </div>
-</section>
+    </section>
 
-  <!-- ##### Final Secciòn Sobre mí ##### -->
+    <!-- #######    FIN SECCION SOBRE MI   #######   -->
 
 
-<!-- ##### Comienzo Mis conocimientos ##### -->
+    <!-- #######   INICIO SECCION MIS CONOCIMIENTOS  #######   -->
 
-<section  class="section-container" id="misconocimientos">
-    <div id="contenedor-misconocimientos" class="columna-2">
+    <section class="section-container-2" id="conocimientos">
+        <div class="columna-2">
+            <h2 class="titulo-conoc"> Mis conocimientos</h2>
+            <p class="texto-conoc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis in
+                magni recusandae molestiae
+                eaque ipsum quo nesciunt possimus tenetur. Nihil eveniet unde, vero quidem dolor voluptates
+                cupiditate magni fuga incidunt?</p>
+            <div id="caja-padre">
+                <div class="caja">
+                    <i class="devicon-html5-plain colored icono-conoc"></i>
+                    <p class="titulo-conoc">HTML 5</p>
+                </div>
+                <div class="caja">
+                    <i class="devicon-css3-plain colored icono-conoc"></i>
+                    <p class="titulo-conoc">CSS 3</p>
+                </div>
 
-    <div id="caja-padre">
+                <div class="caja ">
+                    <i class="devicon-sass-plain colored icono-conoc"></i>
+                    <p class="titulo-conoc">Sass</p>
+                </div>
 
-<h2>Mis conocimientos</h2>
-<div class="mi-descripcion-conoc">
-<p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis in magni recusandae molestiae eaque ipsum quo nesciunt possimus tenetur. Nihil eveniet unde, vero quidem dolor voluptates cupiditate magni fuga incidunt?</p></div>
+                <div class="caja ">
+                    <i class="devicon-javascript-plain colored icono-conoc"></i>
+                    <p class="titulo-conoc">JavaScript</p>
+                </div>
 
+                <div class="caja ">
+                    <i class="devicon-react-plain colored icono-conoc"></i>
+                    <p class="titulo-conoc">React</p>
+                </div>
 
+                <div class="caja ">
+                    <i class="devicon-git-plain colored icono-conoc"></i>
+                    <p class="titulo-conoc">GIT</p>
 
-
-<!--Mis conocimientos fin texto -->
-
-
-<div class="caja" >
-<i class="devicon-html5-plain colored icono-conoc"></i>
-
-<p class="titulo-conoc">HTML 5</p>
-</div>
-<div class="caja conoc-caja" >
-<i class="devicon-css3-plain colored icono-conoc"></i>
-<p class="titulo-conoc">CSS 3</p>
-
-</div>
-<div class="caja conoc-caja" >
-<i class="devicon-sass-plain colored icono-conoc"></i>
-        <p class="titulo-conoc">Sass</p>
-</div>
-
-<div class="caja conoc-caja" >
-<i class="devicon-javascript-plain colored icono-conoc"></i>
-<p class="titulo-conoc">JavaScript</p>
-</div>
-
-<div class="caja conoc-caja" >
-<i class="devicon-react-plain colored icono-conoc"></i>
-<p class="titulo-conoc">React</p>
-</div>
-
-<div class="caja conoc-caja" >
-<i class="devicon-git-plain colored icono-conoc"></i>
-        <p class="titulo-conoc">GIT</p>
-
-</div>
-</div>
-</section>
-
-  <!-- ##### Final Mis conocimientos##### -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #######    FIN SECCION MIS CONOCIMIENTOS  #######   -->
 
 
-  
+    <!-- #######        INICIO SECCION FRASE        #######   -->
+    <section class="section-container-3" id="contenedor-info">
+        <div class="columna-3">
+            <i class="fas fa-quote-right icono-frase"></i>
+            <blockquote>
+                <p class="frase">
 
+                    “Siempre hice algo para lo que no me sentía completamente lista. Creo que así es como uno crece.
+                    Cuando llega ese momento de ‘Wow, no estoy segura de si puedo hacerlo’ y consigues trascenderlo,
+                    entonces tienes un gran avance”.
+                </p>
+            </blockquote>
+            <h2 class="frase-autora">Marissa Mayer, directora ejecutiva de Yahoo.</h2>
+        </div>
+    </section>
+    <!-- #######        FIN SECCION FRASE        #######   -->
+
+
+    <!-- #######      INICIO SECCION MIS PROYECTOS      #######  -->
+
+    <section class="section-container-4" id="proyectos">
+        <div class="columna-4">
+            <h2 class="titulo-conoc">Mis Proyectos</h2>
+            <p class="texto-proyectos"> Mi portfolio recopila los trabajos hasta ahora realizados dando a conocer mi
+                avance en cuanto a mis nuevos conocimientos y habilidades.</p>
+
+            <div id="caja-padre-2">
+
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img1.svg" alt="chica">
+                    <p class="titulo-conoc">Portfolio</p>
+                </div>
+
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img2.svg" alt="chica">
+                    <p class="titulo-conoc">Generador de memes</p>
+                </div>
+
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img2.svg" alt="chica">
+                    <p class="titulo-conoc">Match 3</p>
+                </div>
+
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img2.svg" alt="chica">
+                    <p class="titulo-conoc">Controlador de gastos</p>
+                </div>
+
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img1.svg" alt="chica">
+                    <p class="titulo-conoc">Administrador de reuniones</p>
+                </div>
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img1.svg" alt="chica">
+                    <p class="titulo-conoc">Todo app</p>
+                </div>
+
+                <div class="caja-2">
+                    <img class="img-conoc" src="../imagenes/img9.svg" alt="chica">
+                    <p class="titulo-conoc">Buscador de peliculas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!-- #######        FIN SECCION MIS PROYECTOS       #######   -->
+
+
+       <!-- #######        INICIO SECCION CONTACTO        #######   -->
+    <section class="section-container-5" id="contacto">
+
+        <div class="columna-5" id="contenedor-contacto">
+            <div id="contactame-texto">
+                <h2 class="titulo-escribime" class="titulo-conoc">Contactame</h2>
+                <p class="texto-contactame">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut
+                    explicabo similique iste magni repellat sequi, suscipit adipisci iusto voluptates odit? Laborum,
+                    eius totam nesciunt ipsam obcaecati debitis excepturi nisi!</p>
+                <div class="caja-redesform">
+                    <ul class="lista-contacto" >
+                        <li class="item-contacto">
+                            <a href="#" class="a_contacto">
+                            <i aria-hidden="true" class="fab fa-twitter icono-form">
+                                </i> AdaLovelac</a>
+                        </li>
+                        <li class="item-contacto">
+                            <a href="#" class="a_contacto">
+                                <i aria-hidden="true" class="fab fa-github-alt icono-form">
+                                </i> AdaLovelace</a>
+                        </li>
+                        <li class="item-contacto">
+                            <a href="#" class="a_contacto">
+                                <i aria-hidden="true" class="fab fa-linkedin-in icono-form"></i> adalovelace</a>
+                        </li>
+                        <li class="item-contacto">
+                            <a href="#" class="a_contacto">
+                                <i aria-hidden="true" class="fas fa-envelope icono-form"></i> ada.lovelace</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Fin form-redes -->
+
+            <!--Inicio form- -->
+            <div class="contactame-escribime">
+                <h2 class="titulo-escribime" class="titulo-conoc">Escribime</h2>
+                <form class="fomulario" action="suscribe.php" method="POST">
+                    <div class="contenedor-2form">
+                        <div class="contenedor-nombre-apellido">
+                            <div class="caja-nombre">
+                                <label class="label-name" for="name">Nombre*</label>
+                                <input class="nombre-input-1" type="text" name="nombre" placeholder="ej:Maria"
+                                    aria-label="Nombre" required>
+                                <!--BORRAR
+            <i
+            class="far fa-times-circle "
+            aria-hidden="true"
+            ></i>
+            <i
+                  class="far fa-check-circle "
+                  aria-hidden="true"
+                ></i> -->
+                            </div>
+                            <div class="caja-apellido">
+                                <label class="label-name" for="lastname">Apellido*</label>
+                                <input class="nombre-input-2" type="text" name="apellido" placeholder="ej.: Perez"
+                                    aria-label="apellido" required>
+                                <!--BORRAR
+            <i
+                  class="far fa-times-circle "
+                  aria-hidden="true"
+                ></i>
+                <i
+                  class="far fa-check-circle "
+                  aria-hidden="true"
+                ></i> -->
+                            </div>
+                        </div>
+                        <div class="caja-email">
+
+                            <label class="label-name" for="email">Email*</label>
+                            <input class="nombre-input-3" type="text" name="email" placeholder="ej.;aaaaa@gmail.com"
+                                aria-label="email" required>
+                            <!--BORRAR
+            <i
+            class="far fa-times-circle"
+            aria-hidden="true"
+            ></i>
+            <i
+            class="far fa-check-circle "
+            aria-hidden="true"
+            ></i>-->
+                        </div>
+                    </div>
+                    <div class="caja-comentario">
+                        <label class="label-name" for="Mensaje*">Mensaje*</label>
+                        <textarea class="texto-input" name="mensaje" id="mensaje" cols="60" rows="13"
+                            placeholder="Escriba su consulta acá" aria-label="mensaje" required></textarea>
+
+                    </div>
+
+                    <button type="submit" class="boton-formulario">Enviar</button>
+                </form>
+            </div>
+        </div>
+      
+    </section>
+  <!-- #######        FIN SECCION CONTACTO        #######   -->
+
+ <!-- #######         INICIO FOOTER     #######   -->
+    <footer>
+        <div class="footer-nav">
+            <ul>
+                <li class="item-2" >
+                    <a class="item-footer"  href="#">HOME</a>
+                </li>
+
+                <li class="item-2" >
+                    <a class="item-footer" href="#conocimientos">CONOCIMIENTOS</a>
+                </li>
+
+                <li class="item-2" >
+                    <a class="item-footer" href="#proyectos">PROYECTOS</a>
+                </li>
+
+                <li class="item-2" > 
+                    <a class="item-footer" href="#contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor-iconosfooter">
+            <ul>
+                <li class="item-2" > <a href=""> <i class="fab fa-twitter icono-footer" target="blank_"></i> </a> </li>
+                <li class="item-2" > <a href="https://github.com/valesor" target="blank_"> <i
+                            class="fab fa-github-alt icono-footer"></i> </a> </li>
+                <li class="item-2" > <a href="https://www.linkedin.com/in/valeria-s%C3%A1nchez-77578915b/" target="blank_"> <i
+                            class="fab fa-linkedin-in icono-footer"></i> </a> </li>
+                <li class="item-2" > <a href="" target="blank_"><i class="fas fa-envelope icono-footer"></i></a> </li>
+            </ul>
+        </div>
+        <p class="pie-footer">Hecho con ❤️ por Valeria Sánchez </p>
+
+    </footer>
+
+ <!-- #######        FIN FOOTER     #######   -->
 </body>
 
 </html>
