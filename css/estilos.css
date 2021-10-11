@@ -807,36 +807,53 @@ footer {
      }
 
     .icono-form .item-contacto {
-     
       width: 100%;
        }
   
 
-       input {
-        width: 80%;
-       
-      }
-
-      
-      textarea {
-        max-width: 80%;
      
-      }
 }
 
 
 
-@media (max-width:500px) {
+@media (max-width:550px) {
  
 
-       input {
-        width: 50%;
-      }
+  .contenedor-nombre-apellido  { 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2em;
+  }
 
-      textarea {
-        max-width: 50%;
-     
-      }
+  .caja-email   { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2em;
+    }
 
+    .caja-comentario  { 
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 2em;
+      }
+  
+  .caja-nombre {
+    width: 100%;
+  }
+
+  div.caja-apellido {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .caja-apellido {
+    width: 100%;
+  }
+
+  input.nombre-input-1{
+    
+    max-width: 100%;
+     }
 
 }
