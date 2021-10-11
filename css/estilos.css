@@ -164,14 +164,18 @@ a.boton-contacto:hover {
   width: 100%;
   background-color: white;
   display: flex;
+  justify-content:space-around;
 }
 
 .caja_presentacion {
-  width: 50%;
+  width: 45%;
+  min-width: 500px;
+  
 }
 
 .imagen-presentacion {
-  width: 50%;
+  width: 45%;
+  min-width: 500px;
 }
 
 /*--TITULO HOLA SOY -banner-- */
@@ -531,7 +535,7 @@ input:focus {
 
 textarea {
   max-width: 100%;
-  margin-top: 2em;
+  margin-top: 1em;
   border: 0.0625em solid #FD6985;
   border-radius: 1.5em;
   background-color: rgba(245, 223, 223, 0.637);
@@ -632,7 +636,7 @@ footer {
 
 /* Responsive*/
 
-/* Header*/
+/* Presentacion*/
 
 @media (max-width:1100px) {
   .columna {
