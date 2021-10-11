@@ -233,8 +233,9 @@ a.boton-lo-que-hago:hover {
 /*MIS CONOCIMIENTOS INICIO */
 
 .columna-2 {
-  margin: 6em 3.5em;
+ 
   width: 100%;
+  margin-bottom: 2em;
 }
 
 .texto-conoc {
@@ -248,7 +249,7 @@ a.boton-lo-que-hago:hover {
 
 #caja-padre {
   width: 100%;
-  padding: 2em 0;
+  padding: 1em ;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -256,8 +257,8 @@ a.boton-lo-que-hago:hover {
 
 .caja {
   background-color: rgb(245, 242, 215);
-  min-width: 300px;
   width: 23%;
+  min-width: 300px;
   margin: 1em;
   padding: 3em 0;
   border: 0.0625em solid #e9ecf7;
@@ -273,7 +274,7 @@ a.boton-lo-que-hago:hover {
 }
 
 .icono-conoc {
-  font-size: 6em;
+  font-size: 5em;
   justify-content: center;
 }
 
@@ -387,7 +388,7 @@ a.boton-lo-que-hago:hover {
   display: flex;
   border: 2px solid #e0e0e0;
   border-radius: 1.25em;
-  padding: 1em 0;
+  padding: 1em 2em;
   justify-content: space-evenly
 }
 
@@ -636,6 +637,19 @@ footer {
 
 /* Responsive*/
 
+/* Trabajos*/
+
+@media (min-width:550px) {
+
+  #caja-padre {
+  
+  }
+
+  
+}
+
+
+
 /* Presentacion*/
 
 @media (max-width:1100px) {
@@ -643,6 +657,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
   .caja_presentacion {
     width: 100%;
     display: flex;
@@ -798,10 +813,30 @@ footer {
   
 
        input {
-        width: 100%;
-        
+        width: 80%;
+       
       }
 
+      
+      textarea {
+        max-width: 80%;
+     
+      }
 }
 
 
+
+@media (max-width:500px) {
+ 
+
+       input {
+        width: 50%;
+      }
+
+      textarea {
+        max-width: 50%;
+     
+      }
+
+
+}
