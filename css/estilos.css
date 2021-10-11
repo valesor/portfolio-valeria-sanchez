@@ -21,6 +21,7 @@ h2 {
   font-size: 3em;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+ 
 }
 
 a:-webkit-any-link {
@@ -73,8 +74,16 @@ section {
   padding: 6em 1em 0 1em;
 }
 
+.parrafo-caja {
+  font-size: 1.25em;
+  font-weight: 600;
+  padding-top: 0.7em;
+}
 
-
+.parrafo-caja2 {
+  font-size: 1em;
+  padding-top: 0.7em;
+}
 /*------------------ HEADER----------------- */
 
 nav {
@@ -96,11 +105,9 @@ nav {
   letter-spacing: 8;
 }
 
-
 .i-activo:active{
   border: 1px solid #FD6985;
   border-radius: 1em;
-
 }
 
 .link_item{
@@ -118,7 +125,6 @@ nav {
   color: #FD6985;
 }
 
-
 .boton-contacto {
   width: 10%;
   background-color: #FD6985;
@@ -126,7 +132,6 @@ nav {
   padding: 0.6em 1em;
   outline: none;
 }
-
 
 .boton-contacto:focus {
   border: 0.0625em solid rgb(88, 85, 85);
@@ -155,19 +160,17 @@ a.boton-contacto:hover {
 /*SOBRE MI INICIO */
 
 .columna {
-  margin: 6em 3.5em;
+  margin: 6em 10em;
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: space-between;
 }
 
-.presentacion-banner {
-
+.caja_presentacion {
   width: 50%;
 }
 
-.imagen-chicabanner {
+.imagen-presentacion {
   width: 50%;
 }
 
@@ -184,7 +187,7 @@ a.boton-contacto:hover {
 .mi-nombre {
   display: flex;
   align-content: flex-start;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 900;
   color: #FD6985;
   margin: 0.05em 0 0 0;
@@ -203,15 +206,14 @@ a.boton-contacto:hover {
   display: flex;
   justify-content: center;
   align-content: flex-start;
-  align-content: center;
-  width: 30%;
+  width: 39%;
   background-color: #FD6985;
   color: white;
   border-radius: 28px;
   padding: 1em 1em;
-  font-size: 1em;
+  font-size: 0.96em;
   font-weight: 700;
-  margin: 2em 0 2em 0;
+  margin: 2.2em 0 2.2em 0;
   transition: 0.2s;
   outline: none;
 }
@@ -225,8 +227,6 @@ a.boton-lo-que-hago:hover {
 /*SOBRE MI FIN */
 
 /*MIS CONOCIMIENTOS INICIO */
-
-/*MIS CONOCIMIENTOS */
 
 .columna-2 {
   margin: 6em 3.5em;
@@ -253,7 +253,7 @@ a.boton-lo-que-hago:hover {
 .caja {
   background-color: rgb(245, 242, 215);
   min-width: 300px;
- width: 23%;
+  width: 23%;
   margin: 1em;
   padding: 3em 0;
   border: 0.0625em solid #e9ecf7;
@@ -273,7 +273,7 @@ a.boton-lo-que-hago:hover {
   justify-content: center;
 }
 
-.titulo-conoc {
+.titulo-h2 {
   margin: 0 0 0.37em 0;
 }
 
@@ -364,7 +364,7 @@ a.boton-lo-que-hago:hover {
   padding: 1em;
 }
 
-.titulo-conoc {
+.titulo-h2 {
   font-weight: 600;
   margin-top: 20px;
   text-align: center;
@@ -397,8 +397,7 @@ a.boton-lo-que-hago:hover {
   
 }
 
-.item-contacto {
-  
+.item-contacto {  
   display: flex;
   justify-content: space-between;
   width: 30%;
@@ -411,7 +410,7 @@ a.boton-lo-que-hago:hover {
 
 .item-contacto:active{
   border: 1px solid #FD6985;
-  border-radius: 1em;
+  border-radius: 1.5em;
 
 }
 
@@ -440,9 +439,8 @@ a.boton-lo-que-hago:hover {
 .icono-form {
   font-size: 1em;
   color: #FD6985;
-  border-radius: 50%;
-  padding: 0.4em;
-  border-radius: 2em;
+  padding: 0.3em;
+  border-radius: 1em;
   text-align: center;
   background-color: white;
   border: 0.0625em solid #fcf8c1e5;
@@ -454,7 +452,6 @@ a.boton-lo-que-hago:hover {
   color: rgb(255, 255, 255);
  
 }
-
 
 .caja-redesform {
   margin-top: 2em;
@@ -642,7 +639,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .presentacion-banner {
+  .caja_presentacion {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -650,7 +647,8 @@ footer {
     align-items: center;
  
   }
-  .imagen-chicabanner {
+
+  .imagen-presentacion {
     width: 70%;
    
 
@@ -660,6 +658,22 @@ footer {
    font-size: 2.125em;
   }
   
+
+  .boton-lo-que-hago {
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em;
+    font-weight: 700;
+    margin: 2em 0 2em 0;
+    width: 30%;
+
+  }
+
+
+
+
+
+
 }
 
 /* Nav-superior*/
@@ -685,7 +699,67 @@ footer {
 }
 
 
-/* Sobre mi*/
+
+
+
+
+/* Frase*/
+
+@media (max-width: 500px) {
+  blockquote {
+    margin: 0;
+  }
+
+  .frase {
+    font-size: 1.2em;
+  }
+  .frase-autora {
+  
+    font-size: 1.1em;
+    
+  }
+
+  .icono-frase {
+    font-size: 5em;
+   
+  }
+  
+}
+
+
+
+
+
+/* proyectos */
+
+@media (max-width:1000px) {
+
+  #caja-padre-2 {
+    justify-content: space-between;
+  }
+  .caja-2 {
+    width: 45%;
+    
+  }
+}
+
+@media (max-width:800px) {
+  
+
+
+
+  #caja-padre-2 {
+    justify-content: center;
+
+  }
+  .caja-2 {
+    width: 100%;
+  }
+}
+
+
+
+/* Formulario*/
 
 @media (max-width:900px) {
   .columna-5 {
@@ -720,41 +794,10 @@ footer {
   
 
        input {
-    
-        display: flex;
+        width: 100%;
         
       }
 
 }
-
-
-
-
-/* Formulario*/
-
-@media (max-width:1000px) {
-
-  #caja-padre-2 {
-  
-    justify-content: space-between;
-  }
-  .caja-2 {
-    width: 45%;
-    
-  }
-}
-
-@media (max-width:800px) {
-
-  #caja-padre-2 {
-    justify-content: center;
-  }
-  .caja-2 {
-    width: 80%;
-    
-  }
-}
-
-
 
 
